@@ -24,6 +24,10 @@ app.get('/v1/sample-data', (req, res) => {
         {
             id: 5,
             data: "lorem ipsum S ajd skd dkln dkl"
+        },
+        {
+            id: 6,
+            data: "lorem ipsum S ajd skd dkln dkl"
         }
     ])
 })
