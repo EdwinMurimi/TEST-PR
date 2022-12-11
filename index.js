@@ -30,6 +30,14 @@ app.get('/v1/sample-data', (req, res) => {
             data: "lorem ipsum S ajd skd dkln dkl"
         }
     ])
+});
+
+app.post('/v1/post-dummy-data', (req, res) => {
+    const { name, address, phonenumber } = req.body;
+
+    const payment_status = fetch('https://paypal.com/v2/api/payment-with-address', { name, address, phonenumber });
+
+    res.send({ payment_status });
 })
 
 const PORT = process.env.PORT || 6000;
