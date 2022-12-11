@@ -32,7 +32,7 @@ app.get('/v1/sample-data', (req, res) => {
     ])
 })
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 
 app.listen(PORT, () => {
     console.log(`application running on this address => http://localhost:${PORT}`);
